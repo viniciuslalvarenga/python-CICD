@@ -13,3 +13,7 @@ THIS_DIR_PARENT = (THIS_DIR / "../").resolve()
 
 # tick to solve import from project.py
 sys.path.insert(0, str(THIS_DIR_PARENT))
+
+# carregamento automático de plugins do pytest
+# tests.fixtures.project_dir funciona com import path para resolver imports
+pytest_plugins = ["tests.fixtures.project_dir"]
