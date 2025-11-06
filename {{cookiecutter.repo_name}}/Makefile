@@ -17,6 +17,7 @@ install:
 lint:
 	bash run.sh lint
 
+# to skip pre-commit hooks no-commit-to-branch
 lint-ci:
 	bash run.sh lint:ci
 
