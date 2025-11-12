@@ -1,6 +1,4 @@
-"""
-Fixture to generate a project directory for testing.
-"""
+"""Fixture to generate a project directory for testing."""
 
 import shutil
 import subprocess
@@ -18,6 +16,7 @@ from tests.utils.project import (
 
 @pytest.fixture(scope="session")
 def project_dir() -> Generator[Path, None, None]:
+    """Generate a project directory for testing."""
     test_session_id: str = generate_test_session_id()
     template_values = {
         "repo_name": f"test_repo_{test_session_id}",
@@ -33,4 +32,5 @@ def project_dir() -> Generator[Path, None, None]:
 
 
 def generate_test_session_id() -> str:
+    """Generate a unique test session ID."""
     return str(uuid4())[:6]
