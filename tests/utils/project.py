@@ -47,4 +47,3 @@ def generate_project(template_value: Dict[str, str], test_session_id: str):
     subprocess.run(cmd, check=True)
     generated_proj_dir = PROJECT_DIR / "sample" / template_values["repo_name"]
     return generated_proj_dir
-    return generated_proj_dir
