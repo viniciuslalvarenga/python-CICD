@@ -1,6 +1,4 @@
-"""
-Test Project Generation
-"""
+"""Test Project Generation Functionality."""
 
 from pathlib import Path
 
