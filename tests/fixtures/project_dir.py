@@ -1,6 +1,5 @@
 """Fixture to generate a project directory for testing."""
 
-import shutil
 import subprocess
 from pathlib import Path
 from typing import Generator
