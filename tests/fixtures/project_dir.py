@@ -29,7 +29,8 @@ def project_dir() -> Generator[Path, None, None]:
         subprocess.run(["make", "lint-ci"], cwd=generated_proj_dir, check=False)
         yield generated_proj_dir
     finally:
-        shutil.rmtree(path=generated_proj_dir)
+        # shutil.rmtree(path=generated_proj_dir) teste
+        subprocess.run(["make", "clean"], check=True)
 
 
 def generate_test_session_id() -> str:
