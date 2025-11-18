@@ -1,6 +1,9 @@
 {
     "python.testing.pytestArgs": [
-        "tests"
+        "proj_tests"
+    ],
+    "python.analysis.extraPaths": [
+        "./src/example_pkg/states_info"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
