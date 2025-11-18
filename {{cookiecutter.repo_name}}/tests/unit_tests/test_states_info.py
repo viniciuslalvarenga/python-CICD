@@ -1,7 +1,7 @@
 """Tests for `example_pkg.states_info`."""
 
 import pytest
-from src.example_pkg.states_info import (
+from example_pkg.states_info import (
     is_city_capitol_of_state,
     slow_add,
 )
