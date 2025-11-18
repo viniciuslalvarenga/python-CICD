@@ -24,7 +24,7 @@ function lint:ci {
 
 # execute tests that are not marked as `slow`
 function test:quick {
-    run-tests -m "not slow" ${@:-"$THIS_DIR/proj_tests/"}
+    run-tests -m "not slow" ${@:-"$THIS_DIR/tests/"}
 }
 
 # execute tests against the installed package; assumes the wheel is already installed
@@ -37,7 +37,7 @@ function test:ci {
 # (example) ./run.sh test tests/test_states_info.py::test__slow_add
 function run-tests {
     PYTEST_EXIT_STATUS=0
-    python -m pytest ${@:-"$THIS_DIR/proj_tests/"} \
+    python -m pytest ${@:-"$THIS_DIR/tests/"} \
         --cov "${COVERAGE_DIR:-$THIS_DIR/src}" \
         --cov-report html \
         --cov-report term \
