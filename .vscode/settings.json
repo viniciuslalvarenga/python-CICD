@@ -3,7 +3,7 @@
         "proj_tests"
     ],
     "python.analysis.extraPaths": [
-        "./src/example_pkg/states_info"
+        "./src/{{cookiecutter.package_import_name}}/states_info"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,

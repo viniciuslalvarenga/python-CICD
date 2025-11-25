@@ -4,10 +4,10 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
-example_pkg = ["*.json"]
+{{cookiecutter.package_import_name}} = ["*.json"]
 
 [project]
-name = "python-package"
+name = "{{cookiecutter.repo_name}}"
 authors = [{ name = "Vinicius Lopes Alvarenga", email = "viniciusl.alvarenga@notme.com" }]
 description = "My package description"
 readme = "README.md"
